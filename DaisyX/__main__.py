@@ -63,9 +63,10 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm [𝓓𝓪𝓲𝓼𝔂 𝓧](https://telegra.ph/file/473cc17913393959e0667.jpg)
+Hello there, I'm [May](https://telegra.ph/file/6f4684ef01067f0e3dca8.jpg)
 
-I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group
+I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot created by 
+[Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana) and I will help in managing your group
 
 ✪ Make sure you read *INFO* Section Below ✪ 
 """
@@ -73,13 +74,17 @@ I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managi
 buttons = [
     [
         InlineKeyboardButton(text="🚀 INFO 🚀", callback_data="aboutmanu_"),
-    ],
-    [
         InlineKeyboardButton(text="❓ Help & Commands ❓", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(
-            text="💫 Add Daisy to your group 💫", url="t.me/daisyXBot?startgroup=true"
+        InlineKeyboardButton(text="🧰 Support Group 🧰", url="https://t.me/gangoffriends"),
+        InlineKeyboardButton(text="📺 Update Channel 📺", url="https://t.me/gangoffriendschannel"),
+    ],
+    [
+        InlineKeyboardButton(text=" ⚡️ Developer ",url="https://t.me/DeshadeethThisarana"),  
+     ],
+    [    
+        InlineKeyboardButton(text="💫 Add May to your group 💫", url="t.me/Miss_May_Bot?startgroup=true"
         ),
     ],
 ]
@@ -100,8 +105,8 @@ HELP_STRINGS = f"""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-You can donate to the original writer's of the Base code,
-Support them  [Inuka](t.me/InukaASiTH),[Jason](t.me/imjanindu),"""
+You can donate to the original writer's of the Base code, Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ
+Support them [Đ€Ş卄ΔĐ€€Ť卄](t.me/DeshadeethThisarana),[★彡ᵖⓡ𝓪Ｂ卄𝒶𝐒𝒽ค彡★](t.me/Prabha_sha),"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -360,7 +365,7 @@ def DaisyX_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by Infinity_Bots.* "
+            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by [Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana).* "
             f"\n\n 🔥 Join [Infinity_Bots](https://t.me/Infinity_Bots) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/473cc17913393959e0667.jpg)"
