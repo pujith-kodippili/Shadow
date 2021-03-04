@@ -63,13 +63,16 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm [May](https://telegra.ph/file/6f4684ef01067f0e3dca8.jpg)
+Hello {}, My name is Shadow🤖
 
-I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot created by 
-[Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana) and I will help in managing your group
+I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot created by \n[Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana) and I will help in managing your group
 
-✪ Make sure you read *INFO* Section Below ✪ 
-"""
+✪ Make sure you read *INFO* Section Below ✪
+
+©2021 [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](http://t.me/gangoffriends) 
+©2021 [Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](http://t.me/DeshadeethThisarana) 
+⚠️All Rights Reserved⚠️
+ """
 
 buttons = [
     [
@@ -84,14 +87,14 @@ buttons = [
         InlineKeyboardButton(text=" ⚡️ Developer ",url="https://t.me/DeshadeethThisarana"),  
      ],
     [    
-        InlineKeyboardButton(text="💫 Add May to your group 💫", url="t.me/Miss_May_Bot?startgroup=true"
+        InlineKeyboardButton(text="💫 Add Shadow to your group 💫", url="t.me/Mr_Shadow_robot?startgroup=true"
         ),
     ],
 ]
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/473cc17913393959e0667.jpg)
+*Main Commands :* 🤖
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
 ✪ /donate: You can support my creater using this command.
@@ -103,6 +106,7 @@ HELP_STRINGS = f"""
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
+DaisyX_IMG = "https://telegra.ph/file/3f1107ae80211dfe712f9.png"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code, Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ
@@ -227,10 +231,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
-                uptime
-            ),
-            parse_mode=ParseMode.HTML,
+            "Hey!  How can I help you?😊"
         )
 
 
@@ -368,7 +369,7 @@ def DaisyX_about_callback(update, context):
             text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by [Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana).* "
             f"\n\n 🔥 Join [Infinity_Bots](https://t.me/Infinity_Bots) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
-            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/473cc17913393959e0667.jpg)"
+            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/3f1107ae80211dfe712f9.png)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -403,7 +404,7 @@ def DaisyX_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [InfinityJE](https://t.me/infinityje).\n"
+            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](https://t.me/gangoffriendschannel).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -424,9 +425,9 @@ def DaisyX_about_callback(update, context):
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
             text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
-            f"\n\nBased on [Daisy](https://github.com/inukaasith/daisy) + [Naruto](https://github.com/imjanindu/narutorobot)."
+            f"\n\nBased on [Arrow](https://github.com/deshadeeth-thisarana/Arrow) + [Hexzy](https://github.com/prabhasha-p/Master)."
             f"\n\n{dispatcher.bot.first_name}'s source code was written by InukaASiTH and Imjanindu"
-            f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @{SUPPORT_CHAT}.",
+            f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @GangOfFriends.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -484,11 +485,11 @@ def DaisyX_about_callback(update, context):
             f"\n✪ We always respect your privacy \n  We never log into bot's api and spying on you \n  We use a encripted database \n  Bot will automatically stops if someone logged in with api."
             f"\n✪ Always try to keep credits, so \n  This hardwork is done by Infinity_Bots team spending many sleepless nights.. So, Respect it."
             f"\n✪ Some modules in this bot is owned by different authors, So, \n  All credits goes to them \n  Also for <b>Paul Larson for Marie</b>."
-            f"\n✪ If you need to ask anything about \n  this bot, Go @{SUPPORT_CHAT}."
+            f"\n✪ If you need to ask anything about \n  this bot, Go @GangOfFriends."
             f"\n✪ If you asking nonsense in Support \n  Chat, you will get warned/banned."
             f"\n✪ All api's we used owned by originnal authors \n  Some api's we use Free version \n  Please don't overuse AI Chat."
             f"\n✪ We don't Provide any support to forks,\n  So these terms and conditions not applied to forks \n  If you are using a fork of DaisyXBot we are not resposible for anything."
-            f"\n\nFor any kind of help, related to this bot, Join @{SUPPORT_CHAT}."
+            f"\n\nFor any kind of help, related to this bot, Join @GangOfFriends."
             f"\n\n<i>Terms & Conditions will be changed anytime</i>\n",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
@@ -809,7 +810,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I am now online!")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I am now online🙋‍♂️")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
