@@ -63,7 +63,7 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello {}, My name is Shadow🤖
+Hello {dispatcher.user.first_name}, My name is Shadow🤖
 
 I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot created by \n[Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana) and I will help in managing your group
 
@@ -72,7 +72,7 @@ I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot created by \n[Đ€Ş卄�
 ©2021 [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](http://t.me/gangoffriends) 
 ©2021 [Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](http://t.me/DeshadeethThisarana) 
 ⚠️All Rights Reserved⚠️
- """
+"""
 
 buttons = [
     [
@@ -366,8 +366,8 @@ def DaisyX_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by [Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana).* "
-            f"\n\n 🔥 Join [Infinity_Bots](https://t.me/Infinity_Bots) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ.* "
+            f"\n\n 🔥 Join [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](https://t.me/GangOfFriends) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/3f1107ae80211dfe712f9.png)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
@@ -426,7 +426,7 @@ def DaisyX_about_callback(update, context):
         query.message.edit_text(
             text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
             f"\n\nBased on [Arrow](https://github.com/deshadeeth-thisarana/Arrow) + [Hexzy](https://github.com/prabhasha-p/Master)."
-            f"\n\n{dispatcher.bot.first_name}'s source code was written by InukaASiTH and Imjanindu"
+            f"\n\n{dispatcher.bot.first_name}'s source code was written by Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @GangOfFriends.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
