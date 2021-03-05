@@ -63,11 +63,13 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello {dispatcher.user.first_name}, My name is Shadow🤖
+Hello there👋, My name is Shadow🤖
 
-I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot created by \n[Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana) and I will help in managing your group
+I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot🤖 created by \n[Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana)
 
-✪ Make sure you read *INFO* Section Below ✪
+I am very powerful🦾 & I will help in managing your group👨‍💻
+
+✪ Make sure you read *INFO* Section Below ✪ 
 
 ©2021 [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](http://t.me/gangoffriends) 
 ©2021 [Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](http://t.me/DeshadeethThisarana) 
@@ -80,14 +82,14 @@ buttons = [
         InlineKeyboardButton(text="❓ Help & Commands ❓", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="🧰 Support Group 🧰", url="https://t.me/gangoffriends"),
-        InlineKeyboardButton(text="📺 Update Channel 📺", url="https://t.me/gangoffriendschannel"),
+        InlineKeyboardButton(text="🧰 Support Group 🧰",url="https://t.me/Gangoffriends"),
+        InlineKeyboardButton(text="📺 Update Channel 📺",url="https://t.me/gangoffriendschannel"),   
     ],
     [
-        InlineKeyboardButton(text=" ⚡️ Developer ",url="https://t.me/DeshadeethThisarana"),  
-     ],
+        InlineKeyboardButton(text="⚡️ Developer ⚡️",url="https://t.me/DeshadeethThisarana"),
+    ],
     [    
-        InlineKeyboardButton(text="💫 Add Shadow to your group 💫", url="t.me/Mr_Shadow_robot?startgroup=true"
+        InlineKeyboardButton(text="➕ Add Shadow to Your Group 🎨", url="t.me/Mr_Shadow_robot?startgroup=true"
         ),
     ],
 ]
@@ -109,8 +111,8 @@ HELP_STRINGS = f"""
 DaisyX_IMG = "https://telegra.ph/file/457567d38ed38b35c0af2.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-You can donate to the original writer's of the Base code, Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ
-Support them [Đ€Ş卄ΔĐ€€Ť卄](t.me/DeshadeethThisarana),[★彡ᵖⓡ𝓪Ｂ卄𝒶𝐒𝒽ค彡★](t.me/Prabha_sha),"""
+You can donate to the original writer's of the Base code, \nĐ€Ş卄ΔĐ€€Ť卄
+Support them [Đ€Ş卄ΔĐ€€Ť卄](t.me/DeshadeethThisarana) , [★彡ᵖⓡ𝓪Ｂ卄𝒶𝐒𝒽ค彡★](t.me/Prabha_sha)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -206,7 +208,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="🔙Back", callback_data="help_back")]]
                     ),
                 )
 
@@ -233,6 +235,8 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_text(
             "Hey!  How can I help you?😊"
+            ),
+            parse_mode=ParseMode.HTML,
         )
 
 
@@ -314,7 +318,7 @@ def help_button(update, context):
                 text=text,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="🔙Back", callback_data="help_back")]]
                 ),
             )
 
@@ -367,10 +371,10 @@ def DaisyX_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ.* "
-            f"\n\n 🔥 Join [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](https://t.me/GangOfFriends) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by \nĐ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ.* "
+            f"\n\n 🔥 Join [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](https://t.me/gangoffriendschannel) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
-            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/3f1107ae80211dfe712f9.png)"
+            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/457567d38ed38b35c0af2.jpg)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -389,7 +393,7 @@ def DaisyX_about_callback(update, context):
                             text="❔Help & Commands", callback_data="help_back"
                         )
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
+                    [InlineKeyboardButton(text="🔙Back", callback_data="aboutmanu_back")],
                 ]
             ),
         )
@@ -405,7 +409,7 @@ def DaisyX_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](https://t.me/gangoffriendschannel).\n"
+            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](https://t.me/GangOfFriends).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -419,20 +423,20 @@ def DaisyX_about_callback(update, context):
                             text="Anti Spam", callback_data="aboutmanu_spamprot"
                         ),
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="aboutmanu_")],
+                    [InlineKeyboardButton(text="🔙Back", callback_data="aboutmanu_")],
                 ]
             ),
         )
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
-            text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
-            f"\n\nBased on [Arrow](https://github.com/deshadeeth-thisarana/Arrow) + [Hexzy](https://github.com/prabhasha-p/Master)."
-            f"\n\n{dispatcher.bot.first_name}'s source code was written by Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ"
+            text=f"*{dispatcher.bot.first_name} Is the redisigned version of Hexzy for the best performance.*"
+            f"\n\nBased on [Arrow](https://github.com/deshadeeth-thisarana/Arrow2) + [Hexzy](https://github.com/prabhasha-p/Hexzy) ."
+            f"\n\n{dispatcher.bot.first_name}'s source code was written by \n[Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana)"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @GangOfFriends.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="aboutmanu_tac")]]
+                [[InlineKeyboardButton(text="🔙Back", callback_data="aboutmanu_tac")]]
             ),
         )
 
@@ -447,7 +451,7 @@ def DaisyX_about_callback(update, context):
             f"\n\nThe message very clearly says that you need these rights - <i>not {dispatcher.bot.first_name}.</i>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="aboutmanu_howto")]]
+                [[InlineKeyboardButton(text="🔙Back", callback_data="aboutmanu_howto")]]
             ),
         )
     elif query.data == "aboutmanu_spamprot":
@@ -476,7 +480,7 @@ def DaisyX_about_callback(update, context):
             "\n_ A button gets added to the welcome message for them to unmute themselves. This proves they aren't a bot! soft - restricts users ability to post media for 24 hours. strong - mutes on join until they prove they're not bots._",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="aboutmanu_howto")]]
+                [[InlineKeyboardButton(text="🔙Back", callback_data="aboutmanu_howto")]]
             ),
         )
     elif query.data == "aboutmanu_tac":
@@ -489,7 +493,7 @@ def DaisyX_about_callback(update, context):
             f"\n✪ If you need to ask anything about \n  this bot, Go @GangOfFriends."
             f"\n✪ If you asking nonsense in Support \n  Chat, you will get warned/banned."
             f"\n✪ All api's we used owned by originnal authors \n  Some api's we use Free version \n  Please don't overuse AI Chat."
-            f"\n✪ We don't Provide any support to forks,\n  So these terms and conditions not applied to forks \n  If you are using a fork of DaisyXBot we are not resposible for anything."
+            f"\n✪ We don't Provide any support to forks,\n  So these terms and conditions not applied to forks \n  If you are using a fork of Shadow bot we are not resposible for anything."
             f"\n\nFor any kind of help, related to this bot, Join @GangOfFriends."
             f"\n\n<i>Terms & Conditions will be changed anytime</i>\n",
             parse_mode=ParseMode.HTML,
@@ -499,7 +503,7 @@ def DaisyX_about_callback(update, context):
                         InlineKeyboardButton(
                             text="Credits", callback_data="aboutmanu_credit"
                         ),
-                        InlineKeyboardButton(text="Back", callback_data="aboutmanu_"),
+                        InlineKeyboardButton(text="🔙Back", callback_data="aboutmanu_"),
                     ]
                 ]
             ),
@@ -545,7 +549,9 @@ def get_help(update, context):
                     [
                         InlineKeyboardButton(
                             text="Support Chat",
-                            url="https://t.me/gangoffriends".
+                            url="https://t.me/GangOfFriends",
+                        )
+                    ],
                 ]
             ),
         )
@@ -563,7 +569,7 @@ def get_help(update, context):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="🔙Back", callback_data="help_back")]]
             ),
         )
 
@@ -635,7 +641,7 @@ def settings_button(update, context):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Back",
+                                text="🔙Back",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -797,7 +803,7 @@ def donate(update: Update, context: CallbackContext):
         )
         update.effective_message.reply_text(
             "You can also donate to the person currently running me "
-            "[here]({})".format(DONATION_LINK),
+            "[Click here]({})".format(DONATION_LINK),
             parse_mode=ParseMode.MARKDOWN,
         )
 
