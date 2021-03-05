@@ -546,7 +546,6 @@ def get_help(update, context):
                         InlineKeyboardButton(
                             text="Support Chat",
                             url="https://t.me/gangoffriends".
-                    ],
                 ]
             ),
         )
