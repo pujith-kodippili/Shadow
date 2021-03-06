@@ -96,7 +96,7 @@ buttons = [
 
 
 HELP_STRINGS = f"""
-*Main Commands :* 🤖
+*Main Commands :* [🤖](https://telegra.ph/file/457567d38ed38b35c0af2.jpg)
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
 ✪ /donate: You can support my creater using this command.
@@ -236,10 +236,7 @@ def start(update: Update, context: CallbackContext):
         update.effective_message.reply_text(
             "Hey!  How can I help you?😊"
             ),
-            parse_mode=ParseMode.HTML,
-        )
-
-
+        
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
     # Log the error before we do anything else, so we can see it even if something breaks.
