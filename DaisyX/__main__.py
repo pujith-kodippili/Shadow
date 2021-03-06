@@ -78,7 +78,7 @@ I am very powerful🦾 & I will help in managing your group👨‍💻
 
 buttons = [
     [
-        InlineKeyboardButton(text="🚀 INFO 🚀", callback_data="aboutmanu_"),
+        InlineKeyboardButton(text="🚀 INFO 🚀",url="https://t.me{}?start=info".format(contex.bot.username)),
         InlineKeyboardButton(text="❓ Help & Commands ❓",url="https://t.me/{}?start=help".format(context.bot.username)),
     ],
     [
