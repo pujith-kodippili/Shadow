@@ -79,7 +79,7 @@ I am very powerful🦾 & I will help in managing your group👨‍💻
 buttons = [
     [
         InlineKeyboardButton(text="🚀 INFO 🚀",url="https://t.me{}?start=info".format(contex.bot.username)),
-        InlineKeyboardButton(text="❓ Help & Commands ❓",url="https://t.me/{}?start=help".format(context.bot.username)),
+        InlineKeyboardButton(text="❓ Help & Commands ❓",url="https://t.me/Mr_Shadow_robot?start=help"),
     ],
     [
         InlineKeyboardButton(text="🧰 Support Group 🧰",url="https://t.me/Gangoffriends"),
