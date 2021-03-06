@@ -63,22 +63,25 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there👋, My name is Shadow🤖
+Hello there👋, My name is Shadow[🤖](https://telegra.ph/file/457567d38ed38b35c0af2.jpg)
 
 I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot🤖 created by \n[Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana)
 
 I am very powerful🦾 & I will help in managing your group👨‍💻
 
+You can find my list of available commands with /help.
+
 ✪ Make sure you read *INFO* Section Below ✪ 
 
 ©2021 [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](http://t.me/gangoffriends) 
 ©2021 [Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](http://t.me/DeshadeethThisarana) 
+
 ⚠️All Rights Reserved⚠️
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="🚀 INFO 🚀",url="https://t.me{}?start=info".format(contex.bot.username)),
+        InlineKeyboardButton(text="🚀 INFO 🚀",url="https://t.me/Mr_Shadow_robot?start=info"),
         InlineKeyboardButton(text="❓ Help & Commands ❓",url="https://t.me/Mr_Shadow_robot?start=help"),
     ],
     [
@@ -368,10 +371,10 @@ def DaisyX_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by \nĐ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ.* "
+            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} [😍](https://telegra.ph/file/457567d38ed38b35c0af2.jpg) \n\nAs  You I'm a next generational group management bot developed by Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ.* "
             f"\n\n 🔥 Join [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](https://t.me/gangoffriendschannel) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
-            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/457567d38ed38b35c0af2.jpg)"
+            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features :)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
