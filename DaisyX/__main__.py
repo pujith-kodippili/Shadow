@@ -79,7 +79,7 @@ I am very powerful🦾 & I will help in managing your group👨‍💻
 buttons = [
     [
         InlineKeyboardButton(text="🚀 INFO 🚀", callback_data="aboutmanu_"),
-        InlineKeyboardButton(text="❓ Help & Commands ❓", callback_data="help_back"),
+        InlineKeyboardButton(text="❓ Help & Commands ❓",url="https://t.me/{}?start=help".format(context.bot.username)),
     ],
     [
         InlineKeyboardButton(text="🧰 Support Group 🧰",url="https://t.me/Gangoffriends"),
