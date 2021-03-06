@@ -63,7 +63,7 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there👋, My name is Shadow[🤖](https://telegra.ph/file/457567d38ed38b35c0af2.jpg)
+Hello there👋, My name is Shadow[🤖](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg)
 
 I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot🤖 created by \n[Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana)
 
@@ -81,7 +81,7 @@ You can find my list of available commands with /help.
 
 buttons = [
     [
-        InlineKeyboardButton(text="🚀 INFO 🚀",url="https://t.me/Mr_Shadow_robot?start=info"),
+        InlineKeyboardButton(text="🚀 INFO 🚀",url="https://t.me/Mr_Shadow_robot?start=aboutmanu_"),
         InlineKeyboardButton(text="❓ Help & Commands ❓",url="https://t.me/Mr_Shadow_robot?start=help"),
     ],
     [
@@ -99,7 +99,7 @@ buttons = [
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/457567d38ed38b35c0af2.jpg)
+*Main Commands :* [🤖](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg)
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
 ✪ /donate: You can support my creater using this command.
@@ -111,7 +111,7 @@ HELP_STRINGS = f"""
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-DaisyX_IMG = "https://telegra.ph/file/457567d38ed38b35c0af2.jpg"
+DaisyX_IMG = "https://telegra.ph/file/f7aa8c01874dd27978c49.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code, \nĐ€Ş卄ΔĐ€€Ť卄
@@ -371,7 +371,7 @@ def DaisyX_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} [😍](https://telegra.ph/file/457567d38ed38b35c0af2.jpg) \n\nAs  You I'm a next generational group management bot developed by Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ.* "
+            text=f"*😍 Hi again! My name is {dispatcher.bot.first_name}*[😍](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg) \n\n*As  You I'm a next generational group management bot developed by Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ.* "
             f"\n\n 🔥 Join [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](https://t.me/gangoffriendschannel) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features :)"
@@ -382,15 +382,15 @@ def DaisyX_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="How To Use Me", callback_data="aboutmanu_howto"
+                            text="🧑‍💻How To Use Me🧑‍💻", callback_data="aboutmanu_howto"
                         ),
                         InlineKeyboardButton(
-                            text="T & C", callback_data="aboutmanu_tac"
+                            text="✨T & C✨", callback_data="aboutmanu_tac"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="❔Help & Commands", callback_data="help_back"
+                            text="❔Help & Commands👮‍♂️", callback_data="help_back"
                         )
                     ],
                     [InlineKeyboardButton(text="🔙Back", callback_data="aboutmanu_back")],
@@ -501,7 +501,7 @@ def DaisyX_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Credits", callback_data="aboutmanu_credit"
+                            text="🗄Credits🗄", callback_data="aboutmanu_credit"
                         ),
                         InlineKeyboardButton(text="🔙Back", callback_data="aboutmanu_"),
                     ]
@@ -526,7 +526,7 @@ def get_help(update, context):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Help",
+                                text="⛑Help⛑",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -542,13 +542,13 @@ def get_help(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help",
+                            text="⛑Help⛑",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Support Chat",
+                            text="🧰 Support Chat 🧰",
                             url="https://t.me/GangOfFriends",
                         )
                     ],
@@ -722,7 +722,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Settings",
+                                text="🛠Settings🛠",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
