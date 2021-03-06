@@ -81,7 +81,7 @@ You can find my list of available commands with /help.
 
 buttons = [
     [
-        InlineKeyboardButton(text="🚀 INFO 🚀",url="https://t.me/Mr_Shadow_robot?start=aboutmanu_"),
+        InlineKeyboardButton(text="🚀 INFO 🚀",url="https://t.me/Mr_Shadow_robot?start=aboutmanu_info"),
         InlineKeyboardButton(text="❓ Help & Commands ❓",url="https://t.me/Mr_Shadow_robot?start=help"),
     ],
     [
