@@ -147,7 +147,7 @@ def repo(update, context):
     message = update.effective_message
     text = message.text[len("/repo ") :]
     usr = get(f"https://api.github.com/users/{text}/repos?per_page=40").json()
-    reply_text = "*Repositorys*\n"
+    reply_text = "*Repositories*\n"
     for i in range(len(usr)):
         reply_text += f"[{usr[i]['name']}]({usr[i]['html_url']})\n"
     message.reply_text(
@@ -299,7 +299,7 @@ def markdown_help_sender(update: Update):
         "Try forwarding the following message to me, and you'll see, and Use #test!"
     )
     update.effective_message.reply_text(
-        "/save test This is a markdown test. _italics_, *bold*, code, "
+        "`/save` test This is a markdown test. _italics_, *bold*, code, "
         "[URL](example.com) [button](buttonurl:github.com) "
         "[button2](buttonurl://google.com:same)"
     )
@@ -625,16 +625,16 @@ __help__ = """
   ✪ /tr or /tl: To translate to your language, by default language is set to english, use /tr <lang code> for some other language!
   ✪ /splcheck: As a reply to get grammar corrected text of gibberish message.
   ✪ /tts: To some message to convert it into audio format!
-  ✪ /stt: Convert audio to text ( only English).
+  ✪ /stt: Convert audio to text (only English).
 
 *➩Search:*
-  ✪ /google <text>:- search google queries.Use in bot pm (admin can use in group).
+  ✪ /google `<text>`:- search google queries.Use in bot pm (admin can use in group).
   ✪ /wiki: Search wikipedia articles.
-  ✪ /ud <query>: Search stuffs in urban dictionary.
+  ✪ /ud `<query>`: Search stuffs in urban dictionary.
   ✪ /reverse: Reverse searches image or stickers on google.
-  ✪ /app <app name>: Finds an app in playstore for you
+  ✪ /app `<app name>`: Finds an app in playstore for you
   ✪ /cash: currency converter
-  ✪ /wall <query>: Get random wallpapers directly from bot!
+  ✪ /wall `<query>`: Get random wallpapers directly from bot!
 
 *➩Github:*
   ✪ /git: Returns info about a GitHub user or organization.
@@ -642,7 +642,7 @@ __help__ = """
 
 *➩Covid:*
   ✪ /covid :To get Global data.
-  ✪ /covid <country>:To get data of a country.
+  ✪ /covid `<country>`:To get data of a country.
  
 *➩Paste:*
   ✪ /paste: Create a paste or a shortened url using dogbin. *From letters to url.*
@@ -650,8 +650,8 @@ __help__ = """
   ✪ /fpaste: Create a paste or a shortened url using dogbin and nekobin.*From files to url.*
 
 *➩Time and Weather:*
-  ✪ /time <query>: Gives information about a timezone.
-  ✪ /weather <city>: Gets weather information of particular place!
+  ✪ /time `<query>`: Gives information about a timezone.
+  ✪ /weather `<city>`: Gets weather information of particular place!
 \
 """
 
