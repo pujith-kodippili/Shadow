@@ -426,7 +426,7 @@ def DaisyX_about_callback(update, context):
         )
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
-            text=f"*{dispatcher.bot.first_name}[🤖](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg) Is the redisigned version of Hexzy for the best performance.*"
+            text=f"*{dispatcher.bot.first_name}*[🤖](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg) *Is the redisigned version of Arrow for the best performance.*"
             f"\n\nBased on [Arrow](https://github.com/deshadeeth-thisarana/Arrow2) + [Hexzy](https://github.com/prabhasha-p/Hexzy) ."
             f"\n\n{dispatcher.bot.first_name}'s source code was written by \n[Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana)"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @GangOfFriends.",
