@@ -81,8 +81,8 @@ You can find my list of available commands with /help.
 
 buttons = [
     [
-        InlineKeyboardButton(text="🚀 INFO 🚀",url="https://t.me/Mr_Shadow_robot?start=aboutmanu_info"),
-        InlineKeyboardButton(text="❓ Help & Commands ❓",url="https://t.me/Mr_Shadow_robot?start=help"),
+        InlineKeyboardButton(text="🚀 INFO 🚀",callback_data="aboutmanu_"),
+        InlineKeyboardButton(text="❓ Help & Commands ❓",callback_data="help"),
     ],
     [
         InlineKeyboardButton(text="🧰 Support Group 🧰",url="https://t.me/Gangoffriends"),
@@ -324,7 +324,8 @@ def help_button(update, context):
 
         elif prev_match:
             curr_page = int(prev_match.group(1))
-            query.message.edit_text(
+            query.message.edit_photo(
+                DaisyX_IMG,
                 HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
@@ -334,7 +335,8 @@ def help_button(update, context):
 
         elif next_match:
             next_page = int(next_match.group(1))
-            query.message.edit_text(
+            query.message.edit_photo(
+                DaisyX_IMG,
                 HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
@@ -343,8 +345,9 @@ def help_button(update, context):
             )
 
         elif back_match:
-            query.message.edit_text(
-                text=HELP_STRINGS,
+            query.message.edit_photo(
+                text=DaisyX_IMG,
+                HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(0, HELPABLE, "help")
@@ -371,8 +374,8 @@ def DaisyX_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*😍 Hi again! My name is {dispatcher.bot.first_name}*[😍](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg) \n\n*As  You I'm a next generational group management bot developed by Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ.* "
-            f"\n\n 🔥 Join [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](https://t.me/gangoffriendschannel) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            text=f"*😍 Hi again! My name is {dispatcher.bot.first_name} 😍* \n\n*As  You I'm a next generational group management bot developed by Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ.* "
+            f"\n\n 🔥 Join [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](https://t.me/gangoffriendschannel) To Keep Yourself Updated About [{dispatcher.bot.first_name}](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg) 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features :)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
