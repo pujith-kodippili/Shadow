@@ -396,7 +396,6 @@ def DaisyX_about_callback(update, context):
         )
     elif query.data == "aboutmanu_back":
         query.message.edit_text(
-            DaisyX_IMG
             PM_START_TEXT,
             reply_markup=InlineKeyboardMarkup(buttons),
             parse_mode=ParseMode.MARKDOWN,
