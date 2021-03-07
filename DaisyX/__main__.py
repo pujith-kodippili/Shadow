@@ -440,7 +440,8 @@ def DaisyX_about_callback(update, context):
     elif query.data == "aboutmanu_permis":
         query.message.edit_text(
             text=f"<b> ｢ Admin Permissions 」</b>"
-            f"\nTo avoid slowing down, {dispatcher.bot.first_name}[🤖](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg) caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), {dispatcher.bot.first_name} will only find out ~10 minutes later."
+            
+            f"\n[🤖](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg)*To avoid slowing down, {dispatcher.bot.first_name}* caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), {dispatcher.bot.first_name} will only find out ~10 minutes later."
             f"\n\nIF you want to update them immediately, you can use the /admincache command,thta'll force {dispatcher.bot.first_name} to check who the admins are again and their permissions"
             f"\n\nIf you are getting a message saying:"
             f"\n<Code>You must be this chat administrator to perform this action!</code>"
