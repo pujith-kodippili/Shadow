@@ -63,7 +63,7 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there👋, My name is Shadow[🤖](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg)
+Hello there👋, My name is 👌John Cena👌[🤖](https://telegra.ph/file/defd2d14eae3a54521a2a.jpg)
 
 I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot🤖 created by \n[Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana)
 
@@ -92,14 +92,14 @@ buttons = [
         InlineKeyboardButton(text="⚡️ Developer ⚡️",url="https://t.me/DeshadeethThisarana"),
     ],
     [    
-        InlineKeyboardButton(text="➕ Add Shadow to Your Group 🎨", url="t.me/Mr_Shadow_robot?startgroup=true"
+        InlineKeyboardButton(text="➕ Add Shadow to Your Group 🎨", url="t.me/John_Cen_robot?startgroup=true"
         ),
     ],
 ]
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg)
+*Main Commands [🤖](https://telegra.ph/file/defd2d14eae3a54521a2a.jpg)
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
 ✪ /donate: You can support my creater using this command.
@@ -111,10 +111,10 @@ HELP_STRINGS = f"""
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-DONATE_STRING = """Heya, glad to hear you want to donate! [🔥](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg)
-Shadow is hosted on one of Heroku's Servers and doesn't require any donations as of now but You can donate to the original writer's of the Base code, \nĐ€Ş卄ΔĐ€€Ť卄
+DONATE_STRING = """Heya, glad to hear you want to donate! [🔥](https://telegra.ph/file/defd2d14eae3a54521a2a.jpg)
+👌John Cena👌 is hosted on one of Heroku's Servers and doesn't require any donations as of now but You can donate to the original writer's of the Base code, \nĐ€Ş卄ΔĐ€€Ť卄
 
-Support them [Đ€Ş卄ΔĐ€€Ť卄](t.me/DeshadeethThisarana) & [★彡ᵖⓡ𝓪Ｂ卄𝒶𝐒𝒽ค彡★](t.me/Prabha_sha)"""
+Support him [Đ€Ş卄ΔĐ€€Ť卄](t.me/DeshadeethThisarana)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -373,7 +373,7 @@ def DaisyX_about_callback(update, context):
             f"\n\n🔥Join [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](https://t.me/gangoffriendschannel) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\nI have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features :)"
-            f"\n\n[👇](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg) You Can Know More About Me By Clicking The Below Buttons [👇](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg)",
+            f"\n\n[👇](https://telegra.ph/file/defd2d14eae3a54521a2a.jpg) You Can Know More About Me By Clicking The Below Buttons [👇](https://telegra.ph/file/defd2d14eae3a54521a2a.jpg)",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -428,7 +428,7 @@ def DaisyX_about_callback(update, context):
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
             text=f"*{dispatcher.bot.first_name}* [🤖](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg) *is the redesigned version of Arrow for the best performance.*"
-            f"\n\nBased on [Arrow](https://github.com/deshadeeth-thisarana/Arrow2) + [Hexzy](https://github.com/prabhasha-p/Hexzy) ."
+            f"\n\nBased on [Arrow](https://github.com/deshadeeth-thisarana/Arrow2) + [Shadow](https://github.com/deshadeeth-thisarana/shadow) ."
             f"\n\n{dispatcher.bot.first_name}'s source code was written by \n[Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana)"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @GangOfFriends.",
             parse_mode=ParseMode.MARKDOWN,
