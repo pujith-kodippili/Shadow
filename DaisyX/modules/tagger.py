@@ -265,10 +265,10 @@ Tagger is an essential feature to mention all subscribed members in the group. A
 - /untagme: unsubscribes from the chat tag list.
 
 *Admin only:*
-- /tagall: mention all subscribed members.
-- /untagall: clears all subscribed members. 
-- /addtag <userhandle>: add a user to chat tag list. (via handle, or reply)
-- /removetag <userhandle>: remove a user to chat tag list. (via handle, or reply)
+- /tagall*:* mention all subscribed members.
+- /untagall*:* clears all subscribed members. 
+- /addtag `<userhandle>`*:* add a user to chat tag list. (via handle, or reply)
+- /removetag `<userhandle>`*:* remove a user to chat tag list. (via handle, or reply)
 """
 
 TAG_ALL_HANDLER = DisableAbleCommandHandler("tagall", tagall, filters=Filters.group)
