@@ -111,9 +111,10 @@ HELP_STRINGS = f"""
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-DONATE_STRING = """Heya, glad to hear you want to donate![🔥](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg)
-You can donate to the original writer's of the Base code, \nĐ€Ş卄ΔĐ€€Ť卄
-Support them [Đ€Ş卄ΔĐ€€Ť卄](t.me/DeshadeethThisarana) , [★彡ᵖⓡ𝓪Ｂ卄𝒶𝐒𝒽ค彡★](t.me/Prabha_sha)"""
+DONATE_STRING = """Heya, glad to hear you want to donate! [🔥](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg)
+Shadow is hosted on one of Heroku's Servers and doesn't require any donations as of now but You can donate to the original writer's of the Base code, \nĐ€Ş卄ΔĐ€€Ť卄
+
+Support them [Đ€Ş卄ΔĐ€€Ť卄](t.me/DeshadeethThisarana) & [★彡ᵖⓡ𝓪Ｂ卄𝒶𝐒𝒽ค彡★](t.me/Prabha_sha)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -369,10 +370,10 @@ def DaisyX_about_callback(update, context):
     if query.data == "aboutmanu_":
         query.message.edit_text(
             text=f"*😍 Hi again! My name is {dispatcher.bot.first_name} 😍* \n\n*As  You I'm a next generational group management bot developed by Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ.* "
-            f"\n\n[🔥](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg) Join [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](https://t.me/gangoffriendschannel) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            f"\n\n🔥Join [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](https://t.me/gangoffriendschannel) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\nI have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features :)"
-            f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
+            f"\n\n[👇](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg) You Can Know More About Me By Clicking The Below Buttons [👇](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg)",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -405,8 +406,8 @@ def DaisyX_about_callback(update, context):
     elif query.data == "aboutmanu_howto":
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
-            f"\nIf You Can Also Add {dispatcher.bot.first_name}[🤖](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg) To Your Chats By Clicking [Here](http://t.me/Mr_Shadow_robot?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](https://t.me/GangOfFriends).\n"
+            f"\nYou can  add {dispatcher.bot.first_name} [🤖](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg) to your chats by [Clicking Here](http://t.me/Mr_Shadow_robot?startgroup=true) and selecting chat. \n"
+            f"\n\nYou can get support {dispatcher.bot.first_name} by joining [🛡Ģ₳ŇĞ🛡 ØF FŔĮĘŃĐŞ📝](https://t.me/GangOfFriends) also.\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -426,7 +427,7 @@ def DaisyX_about_callback(update, context):
         )
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
-            text=f"*{dispatcher.bot.first_name}*[🤖](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg) *Is the redisigned version of Arrow for the best performance.*"
+            text=f"*{dispatcher.bot.first_name}* [🤖](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg) *is the redesigned version of Arrow for the best performance.*"
             f"\n\nBased on [Arrow](https://github.com/deshadeeth-thisarana/Arrow2) + [Hexzy](https://github.com/prabhasha-p/Hexzy) ."
             f"\n\n{dispatcher.bot.first_name}'s source code was written by \n[Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana)"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @GangOfFriends.",
@@ -441,7 +442,7 @@ def DaisyX_about_callback(update, context):
         query.message.edit_text(
             text=f"<b> ｢ Admin Permissions 」</b>"
             
-            f"\n[🤖](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg)*To avoid slowing down, {dispatcher.bot.first_name}* caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), {dispatcher.bot.first_name} will only find out ~10 minutes later."
+            f"\n*To avoid slowing down, {dispatcher.bot.first_name}* caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), {dispatcher.bot.first_name} will only find out ~10 minutes later."
             f"\n\nIF you want to update them immediately, you can use the /admincache command,thta'll force {dispatcher.bot.first_name} to check who the admins are again and their permissions"
             f"\n\nIf you are getting a message saying:"
             f"\n<Code>You must be this chat administrator to perform this action!</code>"
