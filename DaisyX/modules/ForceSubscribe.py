@@ -1,5 +1,5 @@
-#    Copyright (C) 2020-2021 by @InukaAsith
-#    This programme is a part of DaisyX TG bot project
+#    Copyright (C) 2020-2021 by @DeshadeethThisarana
+#    This programme is a part of Arrow bot project
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -200,9 +200,9 @@ Note: Only creator of the group can setup me and i will not allow force subscrib
  
 *Commmands*
 ✪ /ForceSubscribe - To get the current settings.
-✪ /ForceSubscribe no/off/disable - To turn of ForceSubscribe.
-✪ /ForceSubscribe {channel username} - To turn on and setup the channel.
-✪ /ForceSubscribe clear - To unmute all members who muted by me.
+✪ /ForceSubscribe `no/off/disable` - To turn of ForceSubscribe.
+✪ /ForceSubscribe `{channel username}` - To turn on and setup the channel.
+✪ /ForceSubscribe `clear` - To unmute all members who muted by me.
 
 Note: /FSub is an alias of /ForceSubscribe
 
