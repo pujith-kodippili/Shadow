@@ -111,8 +111,6 @@ HELP_STRINGS = f"""
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-DaisyX_IMG = ""
-
 DONATE_STRING = """Heya, glad to hear you want to donate![🔥](https://telegra.ph/file/f7aa8c01874dd27978c49.jpg)
 You can donate to the original writer's of the Base code, \nĐ€Ş卄ΔĐ€€Ť卄
 Support them [Đ€Ş卄ΔĐ€€Ť卄](t.me/DeshadeethThisarana) , [★彡ᵖⓡ𝓪Ｂ卄𝒶𝐒𝒽ค彡★](t.me/Prabha_sha)"""
