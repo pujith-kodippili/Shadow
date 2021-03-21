@@ -156,7 +156,7 @@ __help__ = """
 
 **Syntax:** `/setalarm 01/01/2000 10:00:00 AM | America/New_York | breakfast`
 
-**NOTE:** Please turn on notifications for @Mr_Shadow_robot otherwise you will not get notification for the alarm !
+**NOTE:** Please turn on notifications for @MissJuliarobot otherwise you will not get notification for the alarm !
 """
 
 CMD_HELP.update({file_helpo: [file_helpo, __help__]})
