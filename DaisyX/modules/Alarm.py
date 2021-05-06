@@ -8,7 +8,7 @@ import os, asyncio
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["missjuliarobot"]
+db = client["shadow-bot"]
 alarms = db.alarm
 approved_users = db.approve
 
